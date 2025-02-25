@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <head>
-    <!-- CSS Colocar tudo em outro arquivo -->
-     <style>
-        
-        .container-class {
-            background-color: blanchedalmond;
-            width: 50;
-            height: 50;
-            color:chocolate;
-            text-align: center;
-        }
-
-        .container-class2 {
-            background-color: blanchedalmond;
-            width: 50;
-            height: 50;
-            color:cadetblue;
-            text-align:start;
-        }
-
-        .container-class3 {
-            background-color: blanchedalmond;
-            width: 50;
-            height: 50;
-            color:crimson;
-            text-align:end;
-        }
-     </style>
+    <!-- Importes-->
+     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1 class="container-class">BASE PRA ESTUDO</h1>
+    <h1 id="texto">Christian School</h1>
+    <!--Deixando o "titulo da pag, com as letras coloridas"-->
+    <script>
+        const texto = document.getElementById("texto");
+        const letras = texto.innerText.split(""); // Divide a palavra em letras
+        const cores = ["blue", "red", "blueviolet", "crimmson", "deeppink"];
+        texto.innerHTML = letras.map((letra, i) => `<span style="color: ${cores[i % cores.length]};">${letra}</span>`
+        ).join("");
+        texto.classList.add("colorido");
+    </script>
     <div class="container-class">
-        <h3> Colocando o Primeiro Elemento</h3>
-        <p>Aqui vou colocar muitas coisas</p>
+        <h3> HTML</h3>
+        <p>Aqui podemos aprender um pouco mais sobre os elementos do html</p>
+        <button>HTML</button>
     </div>
+
     <div class="container-class2">
-        <h3> Colocando segundo Elemento</h3>
-        <p>Aqui vou colocar muitas coisas</p>
+        <h3> CSS</h3>
+        <p>Aqui vamos aprender na pratica como deixar nosso site um arraso</p>
+        <button>CSS</button>
     </div>
+
     <div class="container-class3">
-        <h3> Colocando terceiro Elemento</h3>
-        <p>Aqui vou colocar muitas coisas</p>
+        <h3> JavaScript</h3>
+        <p>Aqui vamos aprender a manipular os elementos do nosso site </p>
+        <button>JavaScript</button>
     </div>
+    <!--Quebra de linhas(hr traça uma linha na pag)-->
+    <br>
+    <hr>
+<!--Quero alinhar o botao na direita ou no meio da barra de pesquisa-->
+    <form class="button-submit">
+        <label>Pesquisar Conteudos</label>
+        <input pesquisa="conteudo">
+        <button>Pesquisar</button>
+             
+    </form>
 </body>
 </html>

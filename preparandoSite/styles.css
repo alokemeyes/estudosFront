@@ -1,0 +1,45 @@
+#texto {
+    background-color: blanchedalmond;
+    width: 50;
+    height: 50;
+    text-align: center;
+}
+
+.colorido span:nth-child(1){color:blue;}
+.colorido span:nth-child(2){color:red;}
+.colorido span:nth-child(3){color:blueviolet;}
+.colorido span:nth-child(4){color:crimson;}
+.colorido span:nth-child(5){color:deeppink;}
+
+.container-class {
+    background-color: blanchedalmond;
+    width: 50;
+    height: 50;
+    color:chocolate;
+    text-align: center;
+}
+
+.container-class2 {
+    background-color: blanchedalmond;
+    width: 50;
+    height: 50;
+    color:cadetblue;
+    text-align:start;
+}
+
+.container-class3 {
+    background-color: blanchedalmond;
+    width: 50;
+    height: 50;
+    color:darkgoldenrod;
+    text-align:end;
+}
+
+.button-submit {
+    border: none;
+    color:black;
+    background-color:blanchedalmond;
+    width: 50;
+    height: 50;
+    align-items: end;
+    }
